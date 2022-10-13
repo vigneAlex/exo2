@@ -106,6 +106,9 @@ section.container {
 .vert{
     color: rgb(66, 190, 108);
 }
+.noir {
+    color: black;
+}
 
 form {
     display: flex;
@@ -114,13 +117,41 @@ form {
     width: 300px;
     margin: 0 auto;
 }
+input, textarea {
+    caret-color: greenyellow;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid green;
+}
 
+input:focus:invalid, textarea:focus:invalid {
+    border: 2px solid red;
+}
 .form {
     display: flex;
     margin-top: 20px;
 }
 .form label {
     width: 130px;
+}
+form .send-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.send-btn button {
+    cursor: pointer;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid green;
+    color: green;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.send-btn button:hover {
+    background: green;
+    color: white;
 }
 .box {
     width: max-content;
